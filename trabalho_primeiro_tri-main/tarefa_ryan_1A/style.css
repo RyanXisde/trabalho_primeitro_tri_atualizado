@@ -1,0 +1,62 @@
+.body{
+    display: grid;
+    grid-template-areas: 
+        "seila0 seila0"
+        "seila2 seila1"
+        "seila3 seila3"
+    ;
+    grid-template-rows: 220px auto 220px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.seila0{
+    grid-area: seila0;
+    background-color: rgb(224, 248, 5);
+}
+
+.seila1{
+    grid-area: seila1;
+    background-color: aqua;
+}
+
+.seila2{
+    grid-area: seila2;
+    background-color: blue;
+}
+
+.seila3{
+    grid-area: seila3;
+    background-color: brown;
+}
+
+@media only screen and (max-width: 850px) {
+    .body{
+        display: grid;
+        grid-template-areas: 
+        "seila0"
+        "seila1"
+        "seila2"
+        "seila3"
+        ;
+        grid-template-rows: 250px 100px auto 270px;
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .body{
+        display: grid;
+        grid-template-areas: 
+        "seila0"
+        "seila1"
+        "seila2"
+        "seila3"
+        ;
+        grid-template-rows: 300px 0px auto 290px;
+        grid-template-columns: auto;
+    }
+
+    aside{
+        display: none;
+    }
+}
