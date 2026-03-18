@@ -60,3 +60,12 @@
         display: none;
     }
 }
+
+.mano{
+    display: flex;
+}
+
+.divv{
+    display: flex;
+    padding: 5px;
+}
